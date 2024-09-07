@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なに着る天気</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>なに着る天気</h1>
+        <h2>毎日の天気に合わせてコーディネートを提案します</h2>
+    </header>
+
+    <!-- 都市選択ボタン -->
+    <div class="city-buttons">
+        <button id="tokyo">東京</button>
+        <button id="osaka">大阪</button>
+        <button id="sapporo">札幌</button>
+    </div>
+
+    <!-- 3分割画面：左右のボタンと中央の天気情報 -->
+    <div class="container hidden" id="weatherContainer">
+        <div class="left">
+            <button id="prevDay">&larr; 前の日</button>
+        </div>
+        <div class="center">
+            <div id="weatherContent">
+                <div id="weatherResult"></div>
+                <div id="suggestion"></div>
+            </div>
+        </div>
+        <div class="right">
+            <button id="nextDay">次の日 &rarr;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
